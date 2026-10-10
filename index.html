@@ -212,6 +212,40 @@ html,body{width:100%;height:100%;background:#000}
 .cpos{right:calc(1.1em + var(--sr))!important}
 .how{left:calc(3% + var(--sl))!important}.how.bk{left:calc(2.5% + var(--sl))!important}.gob{right:calc(3% + var(--sr))!important;bottom:calc(4% + var(--sb))!important}
 canvas#cv{image-rendering:auto}
+.fstip{position:absolute;left:50%;bottom:calc(var(--u)*.075 + var(--sb));transform:translateX(-50%);z-index:8;display:flex;align-items:center;gap:.6em;font:italic 700 .85em Impact,'Arial Black',sans-serif;color:#fff6c8;background:linear-gradient(rgba(36,28,56,.96),rgba(14,10,24,.96));border:.16em solid #0b0812;border-radius:.8em;padding:.35em .5em .35em 1em;box-shadow:inset 0 0 0 .1em rgba(242,189,58,.4),0 .2em .6em rgba(0,0,0,.5);white-space:nowrap}
+.fstip button{font:700 1.2em Arial,sans-serif;color:#2a1400;background:linear-gradient(#ffe08a,#e8941a);border:.12em solid #0b0812;border-radius:50%;width:1.5em;height:1.5em;line-height:1;cursor:pointer;padding:0}
+.trb{flex:none;width:3.1em;height:3.1em;margin-left:auto;padding:0;background:none;border:0;cursor:pointer;filter:drop-shadow(0 .12em 0 rgba(0,0,0,.6)) drop-shadow(0 0 .35em rgba(255,210,80,.55));animation:lvf 3s ease-in-out infinite}
+.trb svg{width:100%;height:100%;display:block}
+.hubtop .trb~.cicon{margin-left:.6em!important}
+.lbn{display:flex;align-items:center;gap:.5em}.lbn span{font:italic 700 .8em Impact,'Arial Black',sans-serif;color:#f2bd3a;letter-spacing:.06em;text-transform:uppercase}
+#lbn{font:italic 700 max(16px,1em) Impact,'Arial Black',sans-serif;width:9em;padding:.25em .6em;color:#fff6c8;background:#120e1c;border:.16em solid #0b0812;border-radius:.6em;box-shadow:inset 0 .12em .3em rgba(0,0,0,.7),0 0 0 .1em #b8862a;outline:none;-webkit-user-select:text;user-select:text}
+.lbn .btn{min-width:0;padding:.25em 1em;font-size:.9em}
+.lbt{display:flex;flex-direction:column;gap:.25em;width:94%;max-width:40em;max-height:52%;overflow:auto;touch-action:pan-y;overscroll-behavior:contain}
+.lbr{display:flex;align-items:center;gap:.6em;padding:.15em .7em .15em .3em;background:linear-gradient(#2c2444,#130f20);border:.15em solid #0b0812;border-radius:.6em;box-shadow:inset .3em 0 0 var(--m)}
+.lbr.top{box-shadow:inset .3em 0 0 var(--m),0 0 .6em rgba(255,210,80,.18)}
+.lbr .rk{width:1.6em;text-align:center;font:italic 700 1.2em Impact,'Arial Black',sans-serif;color:var(--m);text-shadow:0 .08em 0 #000}
+.lbr img{width:1.9em;height:1.9em;object-fit:contain}
+.lbr .nm{flex:1;text-align:left;font:italic 700 1em Impact,'Arial Black',sans-serif;color:#fff6c8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lbr .rc{font:italic 700 .9em Impact,'Arial Black',sans-serif;color:#ffd35a}.lbr .kl{min-width:5em;text-align:right;font-size:.8em;color:#d3c6e6}
+.lbs{font-size:.72em;color:#b8acd0}
+.lbr.me{background:linear-gradient(#4a3a20,#2a1e10);box-shadow:inset .3em 0 0 var(--m),0 0 0 .12em #ffd35a}
+.lbr .nm em{font-size:.6em;font-style:italic;color:#2a1400;background:linear-gradient(#ffe08a,#e8941a);border-radius:.4em;padding:.05em .4em;margin-left:.3em;vertical-align:middle}
+.lbme{width:94%;max-width:40em}
+.lbsep{font:italic 700 .75em Impact,'Arial Black',sans-serif;color:#f2bd3a;letter-spacing:.06em;text-transform:uppercase;margin:.2em 0 0!important}
+.emb:not(.rot) .pad.pr{bottom:calc(var(--u)*.012 + var(--sb) + 46px)}
+.emb.lh:not(.rot) .joy{bottom:calc(var(--u)*.02 + var(--sb) + 46px)}
+.emb:not(.rot) .hubnav{padding-right:calc(.5em + var(--sr) + 40px)!important}
+.nmrow{display:flex;gap:.5em;align-items:center}
+#nmin{font:italic 700 max(16px,1.4em) Impact,'Arial Black',sans-serif;width:10em;padding:.3em .7em;color:#ffe066;background:#120e1c;border:.18em solid #0b0812;border-radius:.6em;box-shadow:inset 0 .15em .4em rgba(0,0,0,.7),0 0 0 .12em #b8862a;outline:none;-webkit-user-select:text;user-select:text;text-align:center}
+#nmin:focus{box-shadow:inset 0 .15em .4em rgba(0,0,0,.7),0 0 0 .15em #ffd35a,0 0 .8em rgba(255,214,80,.6)}
+.nmrow .btn{min-width:0;padding:.35em 1.1em}
+.gbtn{display:inline-flex;align-items:center;gap:.7em;font:700 1em 'Trebuchet MS',Roboto,Arial,sans-serif;color:#1f1f1f;background:#fff;border:.16em solid #0b0812;border-radius:1.4em;padding:.5em 1.4em .5em 1em;cursor:pointer;box-shadow:0 .15em 0 rgba(0,0,0,.5)}
+.gbtn svg{width:1.3em;height:1.3em}
+.aor{font:italic 700 .8em Impact,'Arial Black',sans-serif;color:#b8acd0;letter-spacing:.06em;text-transform:uppercase}
+#em,#ecode{font:700 max(16px,1.05em) 'Trebuchet MS',Arial,sans-serif;width:13em;padding:.4em .8em;color:#fff6c8;background:#120e1c;border:.16em solid #0b0812;border-radius:.6em;box-shadow:inset 0 .12em .3em rgba(0,0,0,.7),0 0 0 .1em #b8862a;outline:none;-webkit-user-select:text;user-select:text}
+#ecode{width:7em;letter-spacing:.3em;text-align:center}
+.amsg{min-height:1.2em;font-size:.82em;color:#8af08a;max-width:30em}.amsg.bad{color:#ff8a70}
+.acbox{display:flex;flex-direction:column;align-items:center;gap:.4em}.acin{font-size:.9em;color:#d3c6e6}.acin b{display:block;font:italic 700 1.4em Impact,'Arial Black',sans-serif;color:#fff6c8}
 </style>
 </head>
 <body>
@@ -262,7 +296,7 @@ function layout(force){
  st.setProperty('--u',(h*16/9)+'px');st.setProperty('--sl',il+'px');st.setProperty('--sr',ir+'px');st.setProperty('--sb',ib+'px');st.setProperty('--st',it+'px');
  const dpr=Math.min(3,window.devicePixelRatio||1);let sc=k*dpr*QF;const mx=2.4e6;if(W*360*sc*sc>mx)sc=Math.sqrt(mx/(W*360));SC=sc;
  cv.width=Math.round(W*SC);cv.height=Math.round(360*SC);
- stage.classList.toggle('rot',ROT);
+ stage.classList.toggle('rot',ROT);let emb=false;try{emb=window.top!==window}catch(e){emb=true}stage.classList.toggle('emb',emb);
  const pz=document.getElementById('bs');if(pz)pz.style.left=((HL+377)/W*100)+'%';
 }
 layout(true);
@@ -271,8 +305,12 @@ if(window.visualViewport)visualViewport.addEventListener('resize',()=>layout());
 let P,S,last=0,T=0,cam=0,tab='g',back='main',selCh='nec1';
 const DEF=()=>({w:150,own:{pistol:1},mown:{club:1},up:{gdm:0,rate:0,mel:0,hp:0,ammo:0,arm:0},lo:{gun:'pistol',mel:'club'},xp:0,lvl:1,best:{},runs:0,slots:[null,null,null],cur:-1,x2:0,chars:{survivor:1},set:{lh:0,k:1,blood:1,auto:1,sfx:1,mus:1}});
 try{P=Object.assign(DEF(),JSON.parse(localStorage.getItem('deadstreet-v4')||'{}'))}catch(e){P=DEF()}
+var BOOT_T=+(P.t||0);window.LASTB=JSON.stringify(Object.assign({},P,{t:0,cs:0}));
+P.lb=P.lb||[];if(!P.name||P.name=='Survivor'){const o=P.name;P.name=(function(){const A=['Rotten','Grim','Toxic','Feral','Rusty','Silent','Bloody','Savage','Wicked','Ashen','Gritty','Frosty','Lucky','Mad','Shadow','Iron','Wild','Dusty'],B=['Raider','Ghoul','Hunter','Scav','Brawler','Reaper','Drifter','Slayer','Ranger','Wolf','Crow','Fang','Viper','Hound','Rogue','Nomad','Bandit','Skull'];for(let i=0;i<40;i++){const n=A[Math.random()*A.length|0]+B[Math.random()*B.length|0]+(10+Math.random()*90|0);if(n.length<=14)return n}return 'Raider'+(100+Math.random()*900|0)})();P.lb.forEach(e=>{if(!o||String(e.n).toLowerCase()==String(o).toLowerCase())e.n=P.name});P.named=0}
+if(!P.lb.length&&P.best&&P.best.L)P.lb.push({n:P.name||'Survivor',L:P.best.L,a:P.best.a||1,k:P.best.k||0,ch:'nec1',d:Date.now(),r:(P.best.L-1)*10+(P.best.a||1)-1});
 P.set=Object.assign({lh:0,k:1,blood:1,auto:1,sfx:1,mus:1,vib:1,osc:0},P.set);P.up=Object.assign({gdm:0,rate:0,mel:0,hp:0,ammo:0,arm:0},P.up);P.own=Object.assign({pistol:1},P.own);P.mown=Object.assign({club:1},P.mown);P.lo=Object.assign({gun:'pistol',mel:'club'},P.lo);P.best=P.best||{};P.slots=[null,null,null];P.pw=Object.assign({hp:0,ammo:0,rage:0,speed:0,shield:0,cash:0,nuke:0,luck:0},P.pw);
-function persist(){try{localStorage.setItem('deadstreet-v4',JSON.stringify(P))}catch(e){}}
+function persistBody(){return JSON.stringify(Object.assign({},P,{t:0,cs:0}))}
+function persist(){if(window.NOPERSIST)return;const pb=persistBody(),changed=pb!==window.LASTB;if(changed||!P.t){P.t=Date.now();window.LASTB=pb}const js=JSON.stringify(P);try{localStorage.setItem('deadstreet-v4',js)}catch(e){}brSave(js);if(typeof cloudSoon=='function'&&changed)cloudSoon()}
 function applySet(){stage.classList.toggle('lh',!!P.set.lh);stage.style.setProperty('--k',[.85,1,1.2][P.set.k])}
 const rnd=i=>{const x=Math.sin(i*127.1)*43758.5453;return x-Math.floor(x)};
 const LV=[
@@ -336,13 +374,28 @@ const pwCost=u=>Math.round(150*Math.pow(1.7,P.pw[u.k]||0));
    itchUrl: your itch.io game page, e.g. 'https://yourname.itch.io/dead-street'.
    Leave it empty and the game finds the page by itself when it runs on itch.io. */
 /* owner: the name shown in the copyright and legal pages (your name or studio name). */
-const CFG={itchUrl:'',owner:'Dead Street'};
+/* Save keeper: on itch.io each upload can run from a new address, which starts browsers with an empty save.
+   A copy of the save is kept on the GitHub site (store.html), which never moves, and restored after updates. */
+const BRIDGE='https://seasidehavenllc.github.io/Dead-street/store.html',BRO='https://seasidehavenllc.github.io';
+let BRF=null,BRready=0,BRpend=null,BRt=0,BRsync=0,BRlt=0;
+function brOn(){const h=location.hostname;return /(^|\.)(itch\.zone|itch\.io|hwcdn\.net)$/i.test(h)}
+function brPost(m){try{if(BRF&&BRready)BRF.contentWindow.postMessage(m,BRO)}catch(e){}}
+function brSave(js){if(!BRF)return;BRpend=js;clearTimeout(BRt);BRt=setTimeout(()=>{if(BRready&&BRsync&&BRpend){brPost({ds:'set',v:BRpend});BRpend=null}},400)}
+function brInit(){if(!brOn())return;BRlt=BOOT_T;try{BRF=document.createElement('iframe');BRF.src=BRIDGE;BRF.setAttribute('aria-hidden','true');BRF.tabIndex=-1;BRF.style.cssText='position:absolute;width:1px;height:1px;left:-9px;top:-9px;border:0;opacity:0;pointer-events:none';
+ addEventListener('message',e=>{if(e.origin!==BRO)return;const d=e.data||{};
+  if(d.ds==='ready'){BRready=1;brPost({ds:'get'})}
+  else if(d.ds==='got'){let r=null;try{r=d.v?JSON.parse(d.v):null}catch(x){}
+   const lt=BRlt,rt=r?+(r.t||0):0;
+   if(r&&rt>lt+1000&&!sessionStorage.getItem('dsRestored')){try{window.NOPERSIST=1;sessionStorage.setItem('dsRestored','1');localStorage.setItem('deadstreet-v4',d.v);location.reload();return}catch(x){window.NOPERSIST=0}}
+   BRsync=1;brPost({ds:'set',v:JSON.stringify(P)});BRpend=null}});
+ document.body.appendChild(BRF)}catch(e){}}
+const CFG={itchUrl:'',owner:'Dead Street',lbUrl:'https://klclvsbyeimtskatouus.supabase.co',lbKey:'sb_publishable_eP_Qs69Bz8yvl5Kb1erHHg_4-T_nssz'};
 function itchPage(){if(CFG.itchUrl)return CFG.itchUrl.replace(/\/$/,'');try{const m=(document.referrer||'').match(/^https:\/\/[a-z0-9-]+\.itch\.io\/[^\/?#]+/i);if(m)return m[0]}catch(e){}return ''}
 function openSupport(){const u=itchPage();if(!u){toast('Support opens on the itch.io page');return}const w=window.open(u+'/purchase','_blank','noopener');if(!w)try{window.top.location.href=u+'/purchase'}catch(e){location.href=u+'/purchase'}}
 /* Ads: nothing runs until a provider is plugged in here. When ready() returns true the game shows an optional
    "watch an ad to double this run's cash" button on the game-over screen. Never forced, never interrupts play. */
 /* Redeem codes. Codes are stored as hashes so they can't be read from the file. Each code works once per player. */
-const RC={1504088040:{w:750,n:'Launch gift'},1628567102:{w:5000,n:'Supporter pack'},1909527903:{w:2000,x2:1,n:'Supporter: double cash forever'},111473197:{w:1000000,admin:1,n:'Admin: everything unlocked'},2369967355:{w:2000,up:{gdm:10,rate:10},n:'Full firepower'}};
+const RC={1504088040:{w:750,n:'Launch gift'},1628567102:{w:5000,n:'Supporter pack'},1909527903:{w:2000,x2:1,n:'Supporter: double cash forever'},111473197:{w:1000000,admin:1,n:'Admin: everything unlocked'},2369967355:{w:2000,up:{gdm:10,rate:10},n:'Full firepower'},748948397:{x2:1,n:'Double money'}};
 function rcHash(s){s=String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');let h=0x811c9dc5;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0}return h}
 function redeem(code){const h=rcHash(code),r=RC[h];if(!String(code||'').trim())return{e:'Type a code first'};if(!r)return{e:'That code is not valid'};P.redeemed=P.redeemed||{};if(r.admin){P.w+=r.w;P.x2=1;GUNS.forEach(k=>P.own[k]=1);MELS.forEach(k=>P.mown[k]=1);for(const k in CH)P.chars[k]=1;UPS.forEach(u=>P.up[u.k]=10);PWU.concat([LUCK]).forEach(u=>P.pw[u.k]=5);persist();return{ok:r}}
  if(P.redeemed[h])return{e:'You already used that code'};
@@ -488,22 +541,22 @@ function newGame(ch){let i=P.slots.findIndex(x=>!x);if(i<0)i=P.slots.reduce((m,x
 function loadSlot(i){S=Object.assign(blank(),JSON.parse(JSON.stringify(P.slots[i])));if(!CH[S.ch])S.ch='nec1';S.max=maxHP(S.ch);S.hp=Math.min(S.max,S.hp||S.max);S.wp=P.own[P.lo.gun]?P.lo.gun:'pistol';S.mc=P.mown[P.lo.mel]?P.lo.mel:'club';S.looted=S.looted||{};S.slot=i;P.cur=i;persist();begin()}
 function toMain(){persist();S=blank();st('menu');scr('main')}
 function scr(n,m){curScr=n;
- ov.style.display='flex';ov.className=n=='main'?'hub':n=='cs'?'cs':['how','help','ctl','legal'].includes(n)?'fix':'';let h='';const on=v=>v?'On':'Off',bt=(k,t,c)=>`<button class="btn${c?' go':''}" data-k="${k}">${t}</button>`,cash=`<p class="m">$${Math.floor(P.w)}</p>`;
+ ov.style.display='flex';ov.className=n=='main'?'hub':n=='cs'?'cs':['how','help','ctl','legal','lb','name','acct'].includes(n)?'fix':'';let h='';const on=v=>v?'On':'Off',bt=(k,t,c)=>`<button class="btn${c?' go':''}" data-k="${k}">${t}</button>`,cash=`<p class="m">$${Math.floor(P.w)}</p>`;
  if(n=='main'){const has=P.slots.some(x=>x);if(!P.slots[P.cur])P.cur=P.slots.findIndex(x=>x);
   const need=xpNeed(P.lvl);let body='';
-  if(hubTab=='play')body=`<p class="t">Dead Street</p><div class="pills"><div class="pill"><span>Best run</span><b>${P.best.L?'Level '+P.best.L+' &middot; Area '+P.best.a:'None yet'}</b></div><div class="pill"><span>Most kills</span><b>${P.best.k||0}</b></div><div class="pill"><span>Runs</span><b>${P.runs||0}</b></div></div>`+bt('new','Start Run',1)+`<p class="rib">Survive as long as you can. Every street is harder than the last.</p>`;
+  if(hubTab=='play')body=`<p class="t">Dead Street</p><div class="pills"><div class="pill"><span>Best run</span><b>${P.best.L?'Level '+P.best.L+' &middot; Area '+P.best.a:'None yet'}</b></div><div class="pill"><span>Most kills</span><b>${P.best.k||0}</b></div><div class="pill"><span>Runs</span><b>${P.runs||0}</b></div></div>`+(P.ck?`<div class="row2">${bt('cont','Continue &middot; Level '+(P.ck.L+1)+' Area '+(P.ck.a+1),1)}${bt('new','New Run')}</div>`:bt('new','Start Run',1))+`<p class="rib">Survive as long as you can. Every street is harder than the last.</p>`;
   if(hubTab=='shop'){const SN={tommy:'Tommy',flame:'Flamer',club:'Club',sledge:'Sledge'},card=id=>{const wp=WP[id]||MW[id],own=(WP[id]?P.own:P.mown)[id],lk=!own&&P.lvl<REQ[id],poor=!own&&!lk&&P.w<PRICE[id];return `<button class="lc${own?' own':lk?' lk':poor?' poor':''}" data-k="sb:${id}"${own||lk||poor?' disabled':''}><img src="${ico(id)}" alt=""><i>${SN[id]||wp.n}</i>${own?'<em>OWNED</em>':`<u>${lk?'LV '+REQ[id]:'$'+PRICE[id]}</u>`}</button>`};
    body=`<div class="lo2"><div class="lop lg"><p class="sec">Guns <small>${GUNS.filter(k=>P.own[k]).length} / ${GUNS.length} owned</small></p><div class="lcg">${GUNS.map(card).join('')}</div></div><div class="lop"><p class="sec">Melee <small>${MELS.filter(k=>P.mown[k]).length} / ${MELS.length} owned</small></p><div class="lcg">${MELS.map(card).join('')}</div></div></div><p class="rib">${GUNS.every(k=>P.own[k])&&MELS.every(k=>P.mown[k])?'Every weapon unlocked. Upgrade them in Upgrades':'Tap a weapon to buy it. New weapons equip automatically'}</p>`}
   if(hubTab=='up'&&upPage==1)body=`<p class="sec">Power-ups drop from zombies. Walk over them to use them, and upgrade them here</p><div class="upg">${PWU.concat([LUCK]).map(u=>{const lv=P.pw[u.k]||0,mx=lv>=5,lk=P.lvl<u.req,c=pwCost(u);return `<button class="upc" data-k="pb:${u.k}"${mx||lk||P.w<c?' disabled':''}><img src="${ico(u.ic)}" alt=""><span><b>${u.n}</b> &nbsp;${lv}/5<br><small>${u.d(lv)}</small></span><em>${mx?'MAX':lk?'Lv '+u.req:'$'+c}</em></button>`}).join('')}</div>`;
   if(hubTab=='up'&&upPage==0)body=`<p class="sec">Character upgrades last forever and carry into every run</p><div class="upg">${UPS.map(u=>{const lv=P.up[u.k]||0,mx=lv>=10,lk=P.lvl<u.req,c=upCost(u);return `<button class="upc" data-k="ub:${u.k}"${mx||lk||P.w<c?' disabled':''}><img src="${ico(u.ic)}" alt=""><span><b>${u.n}</b> &nbsp;${lv}/10<br><small>${u.d}</small></span><em>${mx?'MAX':lk?'Lv '+u.req:'$'+c}</em></button>`}).join('')}</div>`;
   if(hubTab=='up')body='<div class="tabs">'+[[0,'Character'],[1,'Power-ups']].map(([k,l])=>`<button class="btn${upPage==k?' on':''}" data-k="upp:${k}">${l}</button>`).join('')+'</div>'+body;
-  if(hubTab=='sup')body=`<p class="sec">Support Dead Street</p><div class="supg">${[['support','heart','#e0442a','Support on itch.io','Tip any amount to keep updates coming'],['rdm:sup','gift','#3fbf4a','Redeem Code','Enter a code for free cash'],['legal:pp','shield','#7a58c8','Privacy Policy','What the game stores and why'],['legal:tos','doc','#c8862e','Terms of Use','The rules for playing and supporting'],['legal:cr','copy','#5a6478','Copyright','Who owns Dead Street']].map(([k,ic,c,a,b])=>`<button class="supc${k=='support'?' hot':''}" data-k="${k}"><i class="si" style="--c:${c}">${SVGI[ic]}</i><span><b>${a}</b><small>${b}</small></span></button>`).join('')}</div><p class="rib">Thank you for playing!</p>`;
+  if(hubTab=='sup')body=`<p class="sec">Support Dead Street</p><div class="supg">${[['support','heart','#e0442a','Support on itch.io','Tip any amount to keep updates coming'],['acct','cloud','#2f9fd0',AU2?'Account':'Save Progress',AU2?'Signed in. Progress backs up online':'Sign in with Google or email (optional)'],['rdm:sup','gift','#3fbf4a','Redeem Code','Enter a code for free cash'],['legal:pp','shield','#7a58c8','Privacy Policy','What the game stores and why'],['legal:tos','doc','#c8862e','Terms of Use','The rules for playing and supporting'],['legal:cr','copy','#5a6478','Copyright','Who owns Dead Street']].map(([k,ic,c,a,b])=>`<button class="supc${k=='support'?' hot':''}" data-k="${k}"><i class="si" style="--c:${c}">${SVGI[ic]}</i><span><b>${a}</b><small>${b}</small></span></button>`).join('')}</div><p class="rib">Thank you for playing!</p>`;
   if(hubTab=='help')body=`<div class="hhd"><p class="sec">Help</p><div class="row2 sm">${bt('hhow:tab','How to Play',1)}${bt('hctl:tab','Controls')}${bt('rdm:htab','Redeem Code')}</div></div><div class="hhelp">${helpCards()}</div>`;
   if(hubTab=='lo'){const gd=Math.round((1+P.up.gdm*.15)*lvB()*100),md=Math.round((1+P.up.mel*.2)*lvB()*100);
    const SN={tommy:'Tommy',flame:'Flamer',club:'Club',sledge:'Sledge'},lc=(k,id,n,on)=>`<button class="lc${on?' on':''}" data-k="${k}"><img src="${ico(id)}" alt=""><i>${SN[id]||n}</i>${on?'<em>EQUIPPED</em>':''}</button>`;
    body=`<div class="lsb">${[['Health',60+P.up.hp*15+(P.lvl-1)*4,'#ff6a5a'],['Ammo',startAmmo(),'#ffd35a'],['Gun dmg',gd+'%','#ff9a48'],['Melee dmg',md+'%','#8af07a'],['Armor',P.up.arm*5+'%','#7cc0ff']].map(([l,v,c])=>`<div class="ls" style="--c:${c}"><span>${l}</span><b>${v}</b></div>`).join('')}</div><div class="lo2"><div class="lop lg"><p class="sec">Gun <small>${WP[P.lo.gun].n}</small></p><div class="lcg">${GUNS.filter(k=>P.own[k]).map(k=>lc('lg:'+k,k,WP[k].n,P.lo.gun==k)).join('')}</div></div><div class="lop"><p class="sec">Melee <small>${MW[P.lo.mel].n}</small></p><div class="lcg">${MELS.filter(k=>P.mown[k]).map(k=>lc('lm:'+k,k,MW[k].n,P.lo.mel==k)).join('')}</div></div></div>${GUNS.every(k=>P.own[k])&&MELS.every(k=>P.mown[k])?'':'<p class="rib">Buy more weapons in the Shop</p>'}`}
   const pc=Math.min(100,Math.floor(P.xp/need*100));
-  h=`<div class="hubtop"><div class="lvw"><div class="lvb"><b>${P.lvl}</b></div></div><div class="xpw"><div class="xpl"><span>LEVEL ${P.lvl}</span><span>${P.xp} / ${need} XP</span></div><div class="xpb"><i style="width:${pc}%"></i><em>${pc}%</em></div></div>${ctlIcon()}<div class="cash">$${Math.floor(P.w)}</div></div><div class="hubbody">${body}</div><div class="hubnav">${[['shop','Shop'],['up','Upgrades'],['lo','Loadout'],['play','Battle'],['sup','Support'],['help','Help'],['set','Settings']].map(([k,l])=>`<button class="nb${hubTab==k?' on':''}${k=='play'?' big':''}" data-k="hub:${k}">${l}</button>`).join('')}</div>`}
+  h=`<div class="hubtop"><div class="lvw"><div class="lvb"><b>${P.lvl}</b></div></div><div class="xpw"><div class="xpl"><span>LEVEL ${P.lvl}</span><span>${P.xp} / ${need} XP</span></div><div class="xpb"><i style="width:${pc}%"></i><em>${pc}%</em></div></div><button class="trb" data-k="lb" aria-label="Leaderboard">${TROPHY}</button>${ctlIcon()}<div class="cash">$${Math.floor(P.w)}</div></div><div class="hubbody">${body}</div><div class="hubnav">${[['shop','Shop'],['up','Upgrades'],['lo','Loadout'],['play','Battle'],['sup','Support'],['help','Help'],['set','Settings']].map(([k,l])=>`<button class="nb${hubTab==k?' on':''}${k=='play'?' big':''}" data-k="hub:${k}">${l}</button>`).join('')}</div>`}
  if(n=='cs'){const c=CH[selCh],own=P.chars[selCh];
   h=`<button class="how bk" data-k="main">Back</button><div class="band"><p class="ct t">Character Select</p><div class="cps">${Object.keys(CH).map(id=>`<button class="cp${id==selCh?' sel':''}${P.chars[id]?'':' lk'}" data-k="pick:${id}"><img src="${portrait(id)}" alt=""></button>`).join('')}</div><p class="cn">${c.n}</p><p class="cd">${c.d}</p><div class="cbr"><p class="cb2"><i>BUFF</i>${c.bf}</p>${own?'':`<p class="cb2 lkd"><i>LOCKED</i>$${c.price}</p>`}</div></div><button class="how" data-k="how">HOW TO PLAY?</button>`+(own?`<button class="gob" data-k="go">GO!</button>`:`<button class="gob" data-k="buyc:${selCh}"${P.w<c.price?' disabled':''}>$${c.price}</button>`)}
  if(n=='how')h=`<p class="t" style="font-size:2.2em">How to Play</p><div class="howg">${[['Move','Joystick, WASD or the left stick. Walk anywhere on the street, up to the houses or down into the road.'],['Fight','Red button, Space or RT fires your gun. Green button, K or LT swings your melee weapon. Hold to keep attacking.'],['Hide','Stand at a house door and press Enter, E or Y. Zombies shuffle past while you heal. Some houses hide ammo or cash.'],['Power-ups','Zombies sometimes drop health, ammo, rage, adrenaline, shields, cash frenzies and nukes. Walk over them to grab them.'],['Upgrade','Kills earn cash and XP. At base, buy weapons, character and power-up upgrades, and set your loadout.'],['Survive','Beat the boss and reach the exit to clear a street. Every street is harder. One life per run, so see how far you get.']].map(([a,b])=>`<div class="howc"><b>${a}</b><span>${b}</span></div>`).join('')}</div>`+bt(fromHelp==2?'hub:help':fromHelp?'help':'cs','Back',1);
@@ -514,6 +567,22 @@ function scr(n,m){curScr=n;
   const row=(k,l,v)=>`<button class="btn row" data-k="s:${k}"><span>${l}</span><b>${v}</b></button>`;
   const ctl=pads.length?`<b style="color:#8af08a">Connected: ${pads[0].id.replace(/\(.*?\)/g,'').replace(/\s+/g,' ').trim().slice(0,38)||'Controller'}</b>`:`<b style="color:#ffb0a0">No controller found</b>`;
   h=`<p class="t" style="font-size:2em">Settings</p><div class="cpos">${ctlIcon()}</div><div class="sgrid">${row('lh','Left-handed controls',on(P.set.lh))}${row('k','Button size',['Small','Medium','Large'][P.set.k])}${row('blood','Blood',on(P.set.blood))}${row('auto','Hold to auto-fire',on(P.set.auto))}${row('sfx','Sound effects',on(P.set.sfx))}${row('mus','Music',on(P.set.mus))}${row('osc','On-screen controls',['Auto','On','Off'][P.set.osc||0])}${row('vib','Controller vibration',on(P.set.vib))}${fsOK?row('fs','Fullscreen',fsOn?'On':'Off'):''}</div>`+`<div class="row2">${bt('ctl','Controls')}${bt('back','Back',1)}</div>`}
+ if(n=='acct'){const esc=s=>String(s||'').replace(/[<>&"]/g,'');
+  if(AU2)h=`<p class="t" style="font-size:2.1em">Your Account</p><div class="cpos">${ctlIcon()}</div><div class="acbox"><p class="acin">Signed in as<b>${esc(AU2.email)||'your account'}</b></p><p class="rib">Your progress backs up automatically and loads on any device you sign in on.</p><small>${P.cs?'Last backup: '+new Date(P.cs).toLocaleString():'Not backed up yet'}</small></div><div class="row2">${bt('csync','Back Up Now',1)}${bt('sout','Sign Out')}${bt('hub:sup','Back')}</div>`;
+  else h=`<p class="t" style="font-size:2.1em">Save Your Progress</p><div class="cpos">${ctlIcon()}</div><p class="rib">Optional. Sign in to back up your progress and play on any device.</p>
+  <button class="gbtn" data-k="gsign"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17.1z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.5 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>Continue with Google</button>
+  <p class="aor">or use your email</p>
+  ${AST.step==0?`<div class="nmrow"><input id="em" type="email" autocomplete="email" placeholder="you@email.com" value="${esc(AST.email)}"><button class="btn" data-k="esend"${AST.busy?' disabled':''}>Send Code</button></div>`:`<div class="nmrow"><input id="ecode" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="123456"><button class="btn go" data-k="everify"${AST.busy?' disabled':''}>Sign In</button><button class="btn" data-k="eback">Change Email</button></div>`}
+  <p class="amsg${AST.bad?' bad':''}">${esc(AST.msg)}</p>`+bt('hub:sup','Back');}
+ if(n=='name')h=`<p class="t" style="font-size:2.2em">Choose Your Name</p><p class="rib">This is how you'll show up on the worldwide leaderboard</p><div class="nmrow"><input id="nmin" type="text" maxlength="14" autocomplete="off" spellcheck="false" value="${cleanName(P.name)}"><button class="btn" data-k="nmrand">Random</button></div><small>Up to 14 letters. You can change it anytime from the trophy.</small>`+bt('nmgo',"Let's Go",1);
+ if(n=='lb'){const md=['#ffd35a','#d8dde6','#e09a5a'],esc=s=>String(s==null?'':s).replace(/[<>&"]/g,''),row=(e,rk,me)=>`<div class="lbr${rk<=3?' top':''}${me?' me':''}" style="--m:${md[rk-1]||'#5d6e98'}"><b class="rk">${rk}</b><img src="${portrait(CH[e.character]?e.character:'nec1')}" alt=""><span class="nm">${esc(e.name)}${me?' <em>YOU</em>':''}</span><span class="rc">Level ${e.level|0} &middot; Area ${e.area|0}</span><span class="kl">${e.kills|0} kills</span></div>`;
+  let body;
+  if(GLB.rows&&!GLB.err)body=GLB.rows.length?GLB.rows.map((e,i)=>row(e,i+1,e.player_id==P.pid)).join(''):'<p class="rib">No scores yet. Be the first on the board!</p>';
+  else if(GLB.err)body='<p class="rib">Can\'t reach the leaderboard right now. Check your connection and try again.</p>';
+  else body='<p class="rib">Loading worldwide scores...</p>';
+  h=`<p class="t" style="font-size:2em">Leaderboard</p><div class="cpos">${ctlIcon()}</div><div class="lbn"><span>Your name</span><input id="lbn" type="text" maxlength="14" autocomplete="off" spellcheck="false" value="${esc(P.name||'Survivor')}"><button class="btn" data-k="lbrand">Random</button><button class="btn" data-k="lbname">Save</button><button class="btn" data-k="lbre">Refresh</button></div>
+  <div class="lbt">${body}</div>${GLB.me&&GLB.rows&&!GLB.err?`<div class="lbme">${row(GLB.me,GLB.me.rank,1)}</div>`:''}<p class="lbs">Top 50 worldwide${P.lbq?' &middot; your latest score is waiting to send':''}</p>`+bt('main','Back',1);
+  if(!GLB.busy&&!GLB._t){GLB._t=1;setTimeout(()=>{GLB._t=0},400);if(!GLB.rows||GLB.stale!==false){GLB.stale=false;lbLoad()}}}
  if(n=='rdm')h=`<p class="t" style="font-size:2.2em">Redeem Code</p><div class="cpos">${ctlIcon()}</div><p>Got a code from Dead Street's social media, or as a thank you for supporting? Enter it here.</p><div class="rdbox"><input id="rdin" type="text" maxlength="24" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="ENTER CODE"><button class="btn go" data-k="rdgo">Redeem</button></div><p id="rdmsg" class="rdmsg"></p>`+bt(rdBack,'Back');
  if(n=='legal'){const L=LEGAL[m]||LEGAL.pp;h=`<p class="t" style="font-size:2em">${L.t}</p><div class="legal">${L.h()}</div>`+bt('hub:sup','Back',1)}
  if(n=='help')h=`<p class="t" style="font-size:2.2em">Help</p><div class="cpos">${ctlIcon()}</div>${helpCards()}<div class="row2 sm">${bt('hhow','How to Play',1)}${bt('hctl','Controls')}${bt('rdm:help','Redeem Code')}${bt('support','Support')}${bt(helpBack,'Back')}</div>`;
@@ -527,7 +596,7 @@ function scr(n,m){curScr=n;
   h+=bt('main','Back')}
  if(n=='pause')h=`<p class="t">Paused</p><div class="cpos">${ctlIcon()}</div><p class="rib">Level ${S.L+1} &middot; Area ${S.area+1} &middot; ${LVN(S.L)}</p>${runStats()}`+bt('resume','Resume',1)+bt('sets','Settings')+bt('quit','Quit run');
  if(n=='lvl')h=`<p class="t">Level ${S.L} cleared!</p><p class="rib">${LVN(S.L-1)} is behind you. The next street is worse.</p>${runStats()}<div class="row2">`+bt('nextL','Next: Level '+(S.L+1)+', '+LVN(S.L),1)+bt('quit','Quit run')+'</div>';
- if(n=='over')h=`<p class="t">You were overrun</p><p class="rib">You made it to Level ${S.L+1}, Area ${S.area+1} in ${LVN(S.L)}</p>${S.newBest?'<p class="nbst">New best!</p>':''}${runStats()}<div class="pills"><div class="pill"><span>Best run</span><b>Level ${P.best.L||1} &middot; Area ${P.best.a||1}</b></div></div><div class="row2">`+(ADS.ready()&&!S.adx&&(S.cash||0)>0?bt('adx','Watch an ad: double this run\'s cash (+$'+S.cash+')'):'')+bt('again','New Run',1)+bt('main','Back to base')+`</div>`+`<button class="spb" data-k="support">${SVGI.heart}Support the game on itch.io</button>`;
+ if(n=='over')h=`<p class="t">You were overrun</p><p class="rib">You made it to Level ${S.L+1}, Area ${S.area+1} in ${LVN(S.L)}</p>${S.newBest?'<p class="nbst">New best!</p>':''}${runStats()}<div class="pills"><div class="pill"><span>Best run</span><b>Level ${P.best.L||1} &middot; Area ${P.best.a||1}</b></div></div><div class="row2">`+(ADS.ready()&&!S.adx&&(S.cash||0)>0?bt('adx','Watch an ad: double this run\'s cash (+$'+S.cash+')'):'')+(P.ck?bt('cont','Continue from Level '+(P.ck.L+1)+' &middot; Area '+(P.ck.a+1),1):'')+bt('again','New Run',P.ck?0:1)+bt('main','Back to base')+`</div>${S.lbRank>=0&&S.lbRank<3?`<p class="nbst">#${S.lbRank+1} on the leaderboard!</p>`:''}`+`<button class="spb" data-k="support">${SVGI.heart}Support the game on itch.io</button>`;
  ov.innerHTML=h;if(NAVON)setTimeout(ensureFocus,0);
 }
 ov.addEventListener('click',e=>{const al=e.target.closest('a[data-k="support"]');if(al){e.preventDefault();openSupport();return}
@@ -541,6 +610,9 @@ ov.addEventListener('click',e=>{const al=e.target.closest('a[data-k="support"]')
   else if(a=='quit'){endRun();st('over');scr('over')}
   else if(a=='lg'){if(P.own[v])P.lo.gun=v;persist();scr('main')}
   else if(a=='lm'){if(P.mown[v])P.lo.mel=v;persist();scr('main')}
+  else if(a=='cont'){contRun()}
+  else if(a=='lb'){GLB.stale=true;scr('lb')}else if(a=='lbre'){GLB.rows=null;GLB.err=0;GLB.stale=true;lbSend();scr('lb')}
+  else if(a=='lbname'){saveName()}else if(a=='acct'){scr('acct')}else if(a=='gsign'){googleStart()}else if(a=='esend'){emailSend()}else if(a=='everify'){emailVerify()}else if(a=='eback'){AST.step=0;AST.msg='';scr('acct')}else if(a=='csync'){cloudSync(false)}else if(a=='sout'){signOut()}else if(a=='nmgo'){nameGo()}else if(a=='nmrand'){const i=document.getElementById('nmin');if(i)i.value=randName()}else if(a=='lbrand'){const i=document.getElementById('lbn');if(i)i.value=randName()}
   else if(a=='new'){selCh=P.chars[selCh]?selCh:'nec1';scr('cs')}
  else if(a=='pick'){selCh=v;scr('cs')}else if(a=='go')newGame(selCh);else if(a=='how'){fromHelp=0;scr('how')}else if(a=='cs')scr('cs');
  else if(a=='buyc'){const q=CH[v];if(!P.chars[v]&&P.w>=q.price){P.w-=q.price;P.chars[v]=1;persist()}scr(S.state=='menu'&&ov.className=='cs'?'cs':'store')}
@@ -619,7 +691,14 @@ function gun(){
  ts.forEach(z=>{hurt(z,w.dm*(1+P.up.gdm*.15)*lvB()*(B().gdm||1)*(S.bf.rage>0?2:1)*(w.fire?(B().fl||1):1),4);if(w.fire&&z.hp>0)z.burn=3200});
 }
 const GRAB=26;
-function endRun(){if(S.slot>=0&&P.slots[S.slot]){P.slots[S.slot]=null;if(P.cur==S.slot)P.cur=P.slots.findIndex(x=>x)}const rec=S.L*10+S.area;S.newBest=rec>=(P.best.r||0)&&(S.kills||0)>0;if(rec>(P.best.r||0)||!P.best.L)P.best=Object.assign(P.best,{r:rec,L:S.L+1,a:S.area+1});P.best.k=Math.max(P.best.k||0,S.kills||0);P.runs=(P.runs||0)+1;persist()}
+function endRun(){if(S.slot>=0&&P.slots[S.slot]){P.slots[S.slot]=null;if(P.cur==S.slot)P.cur=P.slots.findIndex(x=>x)}const rec=S.L*10+S.area;S.newBest=rec>=(P.best.r||0)&&(S.kills||0)>0;if(rec>(P.best.r||0)||!P.best.L)P.best=Object.assign(P.best,{r:rec,L:S.L+1,a:S.area+1});P.best.k=Math.max(P.best.k||0,S.kills||0);P.runs=(P.runs||0)+1;
+ P.ck={L:S.L,a:S.area,ch:S.ch,k:S.kills||0};
+ const en=lbPut({n:P.name||'Survivor',L:S.L+1,a:S.area+1,k:S.kills||0,ch:S.ch,d:Date.now(),r:rec});S.lbRank=-1;persist();lbQueue()}
+function lbKey(n){return String(n||'Survivor').trim().toLowerCase()}
+function lbBetter(a,b){return a.r>b.r||(a.r==b.r&&a.k>b.k)}
+function lbClean(){const m=new Map();for(const e of P.lb||[]){const k=lbKey(e.n),o=m.get(k);if(!o||lbBetter(e,o))m.set(k,e)}P.lb=[...m.values()].sort((x,y)=>y.r-x.r||y.k-x.k).slice(0,10)}
+function lbPut(en){P.lb=P.lb||[];const k=lbKey(en.n),o=P.lb.find(e=>lbKey(e.n)==k);let cur=en;if(o){if(lbBetter(en,o))Object.assign(o,en);cur=o}else P.lb.push(en);lbClean();return cur}
+function contRun(){const c=P.ck;if(!c)return;S=blank();S.ch=CH[c.ch]?c.ch:'nec1';S.max=maxHP(S.ch);S.hp=S.max;S.ammo=startAmmo();S.wp=P.own[P.lo.gun]?P.lo.gun:'pistol';S.mc=P.mown[P.lo.mel]?P.lo.mel:'club';S.L=c.L;S.px=c.a*AL+40;S.slot=-1;S.cont=1;S.kills=c.k||0;begin();S.bn='Continue: '+LVN(S.L)+', Area '+(c.a+1)}
 function toggleHide(){
  if(S.hid){S.hid=0;S.z.forEach(z=>z.pd=0);sfx('door');return}
  if(S.door<0||S.eat>0)return;const h=houses()[S.door];S.hid=1;S.hidAt=S.door;S.px=h.x+h.dc*h.sc;S.py=YB+2;S.mv=0;S.my=0;jk.style.transform='';S.hold={g:0,m:0};S.z.forEach(z=>{z.pd=Math.sign(S.px-z.x)||1;z.ac=-1;z.eat=0});sfx('door');
@@ -1069,20 +1148,82 @@ const PAD={on:false,prev:[],mv:0,hold:0,nd:0,nt:0,nr:false};let NAVON=false,FK=n
 const hasTouch=('ontouchstart' in window)||navigator.maxTouchPoints>0;
 const runStats=()=>`<div class="stats">${[['Zombies killed',S.kills||0,'#ff6a5a'],['Cash earned','$'+(S.cash||0),'#ffd35a'],['XP earned',S.xpg||0,'#7cc0ff']].map(([l,v,c])=>`<div class="stt" style="--c:${c}"><span>${l}</span><b>${v}</b></div>`).join('')}</div>`;
 const helpCards=()=>`<div class="howg">${[['No sound?','Tap the screen or press any key once. Phones and browsers only start sound after you touch the game. Check Sound and Music in Settings and your silent switch.'],['Controller','Pair it over Bluetooth or USB, then press any button. The controller icon turns from red X to colour when it connects.'],['Saving','Your cash, weapons, upgrades and level save on this device and browser automatically. Clearing site data erases them.'],['Phone','Turn your phone sideways for the best view. On iPhone, Share then Add to Home Screen plays it full screen.'],['Codes','Codes are posted on Dead Street\'s social media and sent to supporters as a thank you. Enter them in Redeem Code. Each code works once.'],['Still stuck?','Message Dead Street on social media or comment on the itch.io page. Say what happened and on which device.']].map(([a,b])=>`<div class="howc"><b>${a}</b><span>${b}</span></div>`).join('')}</div>`;
+const TROPHY='<svg viewBox="0 0 64 64"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3a8"/><stop offset=".45" stop-color="#f2bd3a"/><stop offset="1" stop-color="#a8650f"/></linearGradient></defs><path d="M16 8h32v6h9c0 12-6 19-14 20-2 5-5 8-8 9v7h8v6H21v-6h8v-7c-3-1-6-4-8-9C13 33 7 26 7 14h9zM13 20c1 6 4 9 7 10-2-3-3-6-4-10zM51 20h-3c-1 4-2 7-4 10 3-1 6-4 7-10z" fill="url(#tg)" stroke="#0b0812" stroke-width="3" stroke-linejoin="round"/><path d="M22 13h6v14c-3-3-5-8-6-14z" fill="rgba(255,255,255,.55)"/><path d="M32 16l2.4 5 5.4.6-4 3.7 1.1 5.3-4.9-2.8-4.9 2.8 1.1-5.3-4-3.7 5.4-.6z" fill="#fff6c8" stroke="#a8650f" stroke-width="1"/></svg>';
+function uid(){try{if(crypto.randomUUID)return crypto.randomUUID()}catch(e){}const b=new Uint8Array(16);(crypto.getRandomValues?crypto.getRandomValues(b):b.forEach((_,i)=>b[i]=Math.random()*256|0));b[6]=b[6]&15|64;b[8]=b[8]&63|128;const h=[...b].map(x=>x.toString(16).padStart(2,'0')).join('');return h.slice(0,8)+'-'+h.slice(8,12)+'-'+h.slice(12,16)+'-'+h.slice(16,20)+'-'+h.slice(20)}
+const GLB={rows:null,me:null,err:0,busy:0};
+function lbHdr(x){return Object.assign({apikey:CFG.lbKey,'Content-Type':'application/json'},x||{})}
+async function lbSend(){const e=P.lbq;if(!e||!CFG.lbUrl)return;if(!P.pid){P.pid=uid();persist()}
+ try{const r=await fetch(CFG.lbUrl+'/rest/v1/rpc/submit_score',{method:'POST',headers:lbHdr(),body:JSON.stringify({p_id:P.pid,p_name:(P.name||'Survivor').slice(0,14),p_level:e.L|0,p_area:Math.max(1,Math.min(4,e.a|0)),p_kills:e.k|0,p_char:e.ch||'nec1'})});
+  if(r.ok){P.lbq=null;persist();if(curScr=='lb')lbLoad()}}catch(err){}}
+function lbQueue(){const L=P.lb||[],me=L.find(x=>lbKey(x.n)==lbKey(P.name||'Survivor'))||L[0];if(!me)return;P.lbq={L:me.L,a:me.a,k:me.k,ch:me.ch};persist();lbSend()}
+async function lbLoad(){if(!CFG.lbUrl||GLB.busy)return;GLB.busy=1;
+ try{const q='/rest/v1/leaderboard?select=player_id,name,level,area,kills,character&order=level.desc,area.desc,kills.desc,updated_at.asc&limit=50';
+  const r=await fetch(CFG.lbUrl+q,{headers:lbHdr()});if(!r.ok)throw 0;GLB.rows=await r.json();GLB.err=0;GLB.me=null;
+  if(P.pid&&!GLB.rows.some(x=>x.player_id==P.pid)){const m=await fetch(CFG.lbUrl+'/rest/v1/leaderboard?select=level,area,kills&player_id=eq.'+P.pid,{headers:lbHdr()});const mr=m.ok?await m.json():[];
+   if(mr.length){const a=mr[0];const f='or=(level.gt.'+a.level+',and(level.eq.'+a.level+',area.gt.'+a.area+'),and(level.eq.'+a.level+',area.eq.'+a.area+',kills.gt.'+a.kills+'))';
+    const c=await fetch(CFG.lbUrl+'/rest/v1/leaderboard?select=player_id&limit=5000&'+f,{headers:lbHdr()});const cr=c.ok?await c.json():[];GLB.me=Object.assign({rank:cr.length+1,name:P.name||'Survivor',player_id:P.pid},a)}}
+ }catch(e){GLB.err=1}GLB.busy=0;if(curScr=='lb')scr('lb')}
+addEventListener('online',lbSend);setTimeout(lbSend,2500);
+const NA=['Rotten','Grim','Toxic','Feral','Rusty','Silent','Bloody','Savage','Wicked','Ashen','Gritty','Frosty','Lucky','Mad','Shadow','Iron','Wild','Dusty','Rabid','Night','Scarred','Undead','Burnt','Lone'],NB=['Raider','Ghoul','Hunter','Scav','Brawler','Reaper','Drifter','Slayer','Ranger','Wolf','Crow','Fang','Viper','Hound','Rogue','Nomad','Bandit','Torch','Skull','Biter','Stalker','Grunt','Medic','Ace'];
+function randName(){for(let i=0;i<40;i++){const n=NA[Math.random()*NA.length|0]+NB[Math.random()*NB.length|0]+(10+Math.random()*90|0);if(n.length<=14)return n}return 'Raider'+(100+Math.random()*900|0)}
+function cleanName(v){return String(v||'').replace(/<[^>]*>/g,'').replace(/[<>&"'`\\]/g,'').replace(/\s+/g,' ').trim().slice(0,14)}
+function setName(v){const n=cleanName(v)||randName(),old=lbKey(P.name);for(const e of P.lb||[])if(lbKey(e.n)==old)e.n=n;P.name=n;P.named=1;lbClean();persist();if((P.lb||[]).length)lbQueue()}
+function nameGo(){const i=document.getElementById('nmin');setName(i?i.value:'');toast('Welcome, '+P.name+'!');scr('main')}
+/* ===== Optional sign-in and cloud save (Supabase Auth). The session stays on this device only. ===== */
+const AUTH_RET='https://seasidehavenllc.github.io/Dead-street/auth.html';
+let AU2=null,AST={step:0,email:'',msg:'',bad:0,busy:0,poll:0,nonce:''},CPt=0;
+try{AU2=JSON.parse(localStorage.getItem('ds-auth')||'null')}catch(e){AU2=null}
+function authSave(s){AU2=s;try{if(s)localStorage.setItem('ds-auth',JSON.stringify(s));else localStorage.removeItem('ds-auth')}catch(e){}}
+function sess(j){const p=JSON.parse(atob(j.access_token.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));return{a:j.access_token,r:j.refresh_token,exp:(p.exp||0)*1000,uid:p.sub,email:(j.user&&j.user.email)||p.email||''}}
+async function authFetch(path,body,tok){const h={apikey:CFG.lbKey,'Content-Type':'application/json'};if(tok)h.Authorization='Bearer '+tok;const r=await fetch(CFG.lbUrl+path,{method:body?'POST':'GET',headers:h,body:body?JSON.stringify(body):undefined});let j=null;try{j=await r.json()}catch(e){}return{ok:r.ok,j}}
+async function authTok(){if(!AU2)return null;if(Date.now()<AU2.exp-60000)return AU2.a;
+ try{const x=await authFetch('/auth/v1/token?grant_type=refresh_token',{refresh_token:AU2.r});if(x.ok&&x.j&&x.j.access_token){authSave(sess(x.j));return AU2.a}if(x.j&&/invalid|not found|revoked/i.test(JSON.stringify(x.j)))authSave(null)}catch(e){}return null}
+async function cloudPull(){const tk=await authTok();if(!tk)return undefined;const r=await fetch(CFG.lbUrl+'/rest/v1/saves?select=data,updated_at&user_id=eq.'+AU2.uid,{headers:{apikey:CFG.lbKey,Authorization:'Bearer '+tk}});if(!r.ok)return undefined;const a=await r.json();return a[0]||null}
+async function cloudPush(){const tk=await authTok();if(!tk)return false;const r=await fetch(CFG.lbUrl+'/rest/v1/saves?on_conflict=user_id',{method:'POST',headers:{apikey:CFG.lbKey,Authorization:'Bearer '+tk,'Content-Type':'application/json',Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify({user_id:AU2.uid,data:P,updated_at:new Date().toISOString()})});if(r.ok){P.cs=Date.now();try{localStorage.setItem('deadstreet-v4',JSON.stringify(P))}catch(e){}}return r.ok}
+function cloudSoon(){if(!AU2)return;clearTimeout(CPt);CPt=setTimeout(cloudPush,6000)}
+function progScore(d){d=d||{};return (d.lvl||1)*1e7+(d.xp||0)*10+(d.runs||0)}
+function freshP(d){d=d||{};return !(d.runs>0)&&(d.lvl||1)<=1&&!(d.xp>0)&&!(d.redeemed&&Object.keys(d.redeemed).length)}
+async function cloudSync(quiet,mode){if(!AU2)return;try{const rm=await cloudPull();if(rm===undefined){if(!quiet)toast('Could not reach cloud save');return}
+ const rd=rm&&rm.data,rt=rd?+(rd.t||0):0,lt=mode=='boot'?BOOT_T:+(P.t||0);
+ let take=false;if(rd){if(freshP(P)&&!freshP(rd))take=true;else if(mode=='login')take=progScore(rd)>progScore(P);else take=rt>lt+1000}
+ if(take){window.NOPERSIST=1;try{localStorage.setItem('deadstreet-v4',JSON.stringify(rm.data));sessionStorage.setItem('dsCloud','1')}catch(e){}if(typeof brPost=='function')brPost({ds:'set',v:JSON.stringify(rm.data)});location.reload();return}
+ if(await cloudPush()){if(!quiet)toast('Progress saved to your account')}else if(!quiet)toast('Could not reach cloud save')}catch(e){if(!quiet)toast('Could not reach cloud save')}}
+function authDone(s){authSave(s);AST={step:0,email:'',msg:'',bad:0,busy:0,poll:0,nonce:''};toast('Signed in!');cloudSync(true,'login').then(()=>{if(curScr=='acct')scr('acct')})}
+async function emailSend(){const i=document.getElementById('em'),e=(i?i.value:'').trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){AST.msg='Enter a valid email address';AST.bad=1;scr('acct');return}
+ AST.busy=1;AST.msg='Sending...';AST.bad=0;scr('acct');
+ try{const x=await authFetch('/auth/v1/otp',{email:e,create_user:true});AST.busy=0;if(x.ok){AST.step=1;AST.email=e;AST.msg='We sent a 6-digit code to '+e+'. Check your spam folder too.';AST.bad=0}else{AST.msg=(x.j&&(x.j.msg||x.j.error_description||x.j.message))||'Could not send the code. Try again in a minute.';AST.bad=1}}catch(err){AST.busy=0;AST.msg='No connection. Try again.';AST.bad=1}
+ scr('acct')}
+async function emailVerify(){const i=document.getElementById('ecode'),c=(i?i.value:'').replace(/\D/g,'');if(c.length<6){AST.msg='Enter the 6-digit code from the email';AST.bad=1;scr('acct');return}
+ AST.busy=1;AST.msg='Checking...';AST.bad=0;scr('acct');
+ try{const x=await authFetch('/auth/v1/verify',{type:'email',email:AST.email,token:c});AST.busy=0;if(x.ok&&x.j&&x.j.access_token){authDone(sess(x.j));return}AST.msg='That code did not work. Check it or send a new one.';AST.bad=1}catch(err){AST.busy=0;AST.msg='No connection. Try again.';AST.bad=1}
+ scr('acct')}
+function googleStart(){const b=new Uint8Array(24);crypto.getRandomValues(b);AST.nonce=[...b].map(x=>x.toString(16).padStart(2,'0')).join('');
+ const u=CFG.lbUrl+'/auth/v1/authorize?provider=google&redirect_to='+encodeURIComponent(AUTH_RET+'?n='+AST.nonce);
+ const w=window.open(u,'_blank');if(!w){try{window.top.location.href=u}catch(e){location.href=u}}
+ AST.msg='Finish signing in with Google in the window that opened, then come back here.';AST.bad=0;AST.poll=Date.now();scr('acct');googlePoll()}
+async function googlePoll(){if(!AST.poll||!AST.nonce)return;if(Date.now()-AST.poll>300000){AST.poll=0;AST.msg='Google sign in timed out. Try again.';AST.bad=1;if(curScr=='acct')scr('acct');return}
+ try{const x=await authFetch('/rest/v1/rpc/take_handoff',{p_nonce:AST.nonce});if(x.ok&&Array.isArray(x.j)&&x.j[0]&&x.j[0].access_token){const j={access_token:x.j[0].access_token,refresh_token:x.j[0].refresh_token};authDone(sess(j));const tk=AU2.a;authFetch('/auth/v1/user',null,tk).then(u=>{if(u.ok&&u.j&&u.j.email){AU2.email=u.j.email;authSave(AU2);if(curScr=='acct')scr('acct')}});return}}catch(e){}
+ setTimeout(googlePoll,2000)}
+async function signOut(){const tk=AU2&&AU2.a;authSave(null);toast('Signed out. Your progress stays on this device.');scr('acct');try{if(tk)await fetch(CFG.lbUrl+'/auth/v1/logout',{method:'POST',headers:{apikey:CFG.lbKey,Authorization:'Bearer '+tk}})}catch(e){}}
+setTimeout(()=>{if(AU2&&!sessionStorage.getItem('dsCloud'))cloudSync(true,'boot');try{sessionStorage.removeItem('dsCloud')}catch(e){}},1800);
+function saveName(){const i=document.getElementById('lbn');if(!i)return;window._lbOld=P.name||'Survivor';const v=cleanName(i.value);P.name=v||P.name||randName();P.named=1;const old=lbKey(window._lbOld);for(const e of P.lb||[])if(lbKey(e.n)==old||!old)e.n=P.name;lbClean();persist();toast('Name saved');lbQueue();scr('lb')}
 const SVGI={heart:'<svg viewBox="0 0 24 24"><path fill="#fff" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2.2 0 3.6 1.3 5.4 3.3 1.8-2 3.2-3.3 5.4-3.3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg>',
  gift:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linejoin="round"><rect x="3" y="9" width="18" height="4.5" rx="1"/><path d="M5 13.5V21h14v-7.5M12 9v12M12 9C10 4.5 6 4.5 6.5 7.3 7 9 12 9 12 9zM12 9c2-4.5 6-4.5 5.5-1.7C17 9 12 9 12 9z"/></svg>',
  help:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"><path d="M8.6 8.8a3.5 3.5 0 1 1 5.2 3c-1.2.7-1.8 1.4-1.8 2.8"/><circle cx="12" cy="19" r=".6" fill="#fff"/></svg>',
+ cloud:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"><path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.5 9.6 4.5 4.5 0 0 0 7 18.5z"/><path d="M12 15.5v-5M9.8 12.6 12 10.4l2.2 2.2"/></svg>',
  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linejoin="round"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>',
  doc:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3" stroke-linejoin="round"><path d="M6 2.5h8.5L19 7v14.5H6z"/><path d="M14 2.5V7h5M9 12h7M9 15.5h7M9 19h4.5"/></svg>',
  copy:'<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.3"><circle cx="12" cy="12" r="9"/><path d="M15 9.3a4 4 0 1 0 0 5.4" stroke-linecap="round"/></svg>'};
 const LEGAL={
 pp:{t:'Privacy Policy',h:()=>`<p class="ld">Last updated October 10, 2026</p>
 <h4>The short version</h4><p>Dead Street does not ask for your name, email or any account. Your progress stays on your own device.</p>
-<h4>What the game stores</h4><p>Your cash, weapons, upgrades, level, settings and the codes you have redeemed are saved in your browser's local storage on this device. This data is never sent to ${CFG.owner}.</p>
-<h4>What the game does not do</h4><p>No sign-up, no analytics, no tracking cookies and no ads. If ads are ever added, this policy will be updated before they go live.</p>
+<h4>What the game stores</h4><p>Your cash, weapons, upgrades, level, settings and the codes you have redeemed are saved in your browser's local storage on this device. This progress data stays on your device.</p>
+<h4>Worldwide leaderboard</h4><p>When a run ends, the game sends your leaderboard name, the level and area you reached, your kill count, your character and a random player ID to the Dead Street leaderboard, which is stored with Supabase. This is shown publicly on the leaderboard. Use a nickname, not your real name. The random ID only keeps your score in one entry and is not linked to you.</p>
+<h4>What the game does not do</h4><p>No sign-up, no email, no analytics, no tracking cookies and no ads. If ads are ever added, this policy will be updated before they go live.</p>
+<h4>Optional sign in</h4><p>If you choose to sign in with Google or your email address, your email address and a copy of your game progress are stored with Supabase so your progress can be backed up and loaded on other devices. Google only shares your name, email address and profile picture with the sign in service, and the game only uses your email to identify your account. Signing in is never required. Ask ${CFG.owner} to delete your account and its data at any time.</p>
 <h4>Other services</h4><p>The website that hosts the game, such as itch.io or GitHub Pages, may keep standard server logs under its own privacy policy. Tips and payments are handled by itch.io, never by the game. The Support button only opens the itch.io page.</p>
 <h4>Children</h4><p>The game collects no personal information from anyone, including children. It contains cartoon violence and blood, which can be turned off in Settings.</p>
-<h4>Deleting your data</h4><p>Clear this site's data in your browser settings. This erases your progress for good.</p>
+<h4>Deleting your data</h4><p>Clear this site's data in your browser settings. This erases your progress for good. To remove your leaderboard entry, contact ${CFG.owner} with your leaderboard name.</p>
 <h4>Changes and contact</h4><p>Updates to this policy will appear here. Questions? Contact ${CFG.owner} through Dead Street's social media or the itch.io page.</p>`},
 tos:{t:'Terms of Use',h:()=>`<p class="ld">Last updated October 10, 2026</p>
 <h4>Playing</h4><p>Dead Street is free to play for personal, non-commercial use. By playing you agree to these terms.</p>
@@ -1109,6 +1250,11 @@ function oscUpdate(){const o=P.set.osc||0,show=o==1||(o==0&&hasTouch&&!PAD.on);s
 const IOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform=='MacIntel'&&navigator.maxTouchPoints>1);
 function goFS(){const d=document,e=d.documentElement;if(d.fullscreenElement||d.webkitFullscreenElement)return;try{const p=(e.requestFullscreen||e.webkitRequestFullscreen).call(e,{navigationUI:'hide'});const lk=()=>{try{screen.orientation.lock('landscape').catch(()=>{})}catch(_){}};if(p&&p.then)p.then(lk).catch(()=>{});else lk()}catch(_){}}
 addEventListener('pointerdown',function f(e){if(IOS||e.pointerType=='mouse'||!navigator.maxTouchPoints)return;removeEventListener('pointerdown',f,true);goFS()},true);
+function fsTip(){try{if(sessionStorage.getItem('dsfs'))return}catch(e){}
+ const inFrame=window.top!==window,standalone=navigator.standalone||matchMedia('(display-mode:standalone),(display-mode:fullscreen)').matches;
+ if(standalone||!IOS)return;const msg=inFrame?'Tip: tap the full screen button under the game':'Tip: for full screen, tap Share, then Add to Home Screen';
+ const d=document.createElement('div');d.className='fstip';d.innerHTML='<span>'+msg+'</span><button aria-label="Close">&times;</button>';d.querySelector('button').onclick=()=>{d.remove();try{sessionStorage.setItem('dsfs','1')}catch(e){}};stage.appendChild(d);setTimeout(()=>{if(d.isConnected)d.remove()},9000)}
+setTimeout(fsTip,1500);
 function toggleFS(){const d=document,e=d.documentElement;try{if(!(d.fullscreenElement||d.webkitFullscreenElement))(e.requestFullscreen||e.webkitRequestFullscreen).call(e);else(d.exitFullscreen||d.webkitExitFullscreen).call(d)}catch(_){}}
 addEventListener('gamepadconnected',e=>{toast('Controller connected');if(['sets','main','pause','ctl'].includes(curScr))scr(curScr)});
 addEventListener('gamepaddisconnected',()=>{PAD.on=false;oscUpdate();toast('Controller disconnected');if(['sets','main','pause','ctl'].includes(curScr))scr(curScr)});
@@ -1123,12 +1269,12 @@ function navMove(dx,dy){if(curScr=='legal'&&dy){const l=ov.querySelector('.legal
  for(const b of navBtns()){if(b==c)continue;const q=b.getBoundingClientRect(),vx=q.left+q.width/2-cx,vy=q.top+q.height/2-cy,al=vx*dx+vy*dy;if(al<=4)continue;const sc=al+Math.abs(vx*dy-vy*dx)*2.2;if(sc<bs){bs=sc;best=b}}
  if(best){focusBtn(best);sfx('tab')}}
 function navClick(){const c=curFocus();if(c)c.click()}
-function navBack(){if(S.state=='pause'&&curScr=='pause'){const r=ov.querySelector("[data-k='resume']");if(r)r.click();return}for(const q of["[data-k='back']","[data-k='help']","[data-k='hub:sup']","[data-k='hub:help']",".how.bk","[data-k='sets']","[data-k='load']"]){const b=ov.querySelector(q);if(b&&curScr!='main'){b.click();return}}if(curScr!='main'&&curScr!='over'){const m=ov.querySelector("[data-k='main']");if(m)m.click()}}
+function navBack(){if(curScr=='name'){nameGo();return}if(S.state=='pause'&&curScr=='pause'){const r=ov.querySelector("[data-k='resume']");if(r)r.click();return}for(const q of["[data-k='back']","[data-k='help']","[data-k='hub:sup']","[data-k='hub:help']",".how.bk","[data-k='sets']","[data-k='load']"]){const b=ov.querySelector(q);if(b&&curScr!='main'){b.click();return}}if(curScr!='main'&&curScr!='over'){const m=ov.querySelector("[data-k='main']");if(m)m.click()}}
 function navTab(d){if(curScr!='main')return;const L=['shop','up','lo','play','sup','help'];let i=L.indexOf(hubTab);hubTab=L[(i+d+L.length)%L.length];sfx('tab');FK='hub:'+hubTab;scr('main')}
 addEventListener('pointerdown',e=>{if(e.pointerType!='mouse'||!NAVON)return;NAVON=false;ov.querySelectorAll('.gf').forEach(x=>x.classList.remove('gf'))},true);
 addEventListener('touchstart',()=>{if(NAVON){NAVON=false;ov.querySelectorAll('.gf').forEach(x=>x.classList.remove('gf'))}},{passive:true,capture:true});
 addEventListener('keydown',e=>{const k=e.key.length==1?e.key.toLowerCase():e.key;
- if(e.target&&e.target.tagName=='INPUT'){if(k=='Enter'){e.preventDefault();doRedeem()}else if(k=='Escape'){e.target.blur();navBack()}return}
+ if(e.target&&e.target.tagName=='INPUT'){if(k=='Enter'){e.preventDefault();if(e.target.id=='lbn')saveName();else if(e.target.id=='nmin')nameGo();else if(e.target.id=='em')emailSend();else if(e.target.id=='ecode')emailVerify();else doRedeem()}else if(k=='Escape'){e.target.blur();navBack()}return}
  if(ovOpen()&&S.state!='play'){
   const m={ArrowUp:[0,-1],w:[0,-1],ArrowDown:[0,1],s:[0,1],ArrowLeft:[-1,0],a:[-1,0],ArrowRight:[1,0],d:[1,0],Tab:[e.shiftKey?-1:1,0]}[k];
   if(m){NAVON=true;if(!curFocus())ensureFocus();else navMove(m[0],m[1]);e.preventDefault()}
@@ -1169,7 +1315,7 @@ function padPoll(){
  PAD.prev=p.buttons.map(x=>!!(x.pressed||x.value>.5));
 }
 
-applySet();S=blank();oscUpdate();scr('main');requestAnimationFrame(t=>{last=t;loop(t)});
+brInit();lbClean();persist();applySet();S=blank();oscUpdate();scr(P.named?'main':'name');requestAnimationFrame(t=>{last=t;loop(t)});
 </script>
 </body>
 </html>

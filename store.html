@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Dead Street save</title></head><body>
+<script>
+/* Dead Street save keeper. Holds a copy of the player's save so itch.io updates don't wipe progress. */
+(function(){
+ var OK=/^https:\/\/([a-z0-9-]+\.)*(itch\.zone|itch\.io|hwcdn\.net)$/i,KEY='ds-save';
+ addEventListener('message',function(e){
+  if(!OK.test(e.origin))return;var d=e.data||{};
+  try{
+   if(d.ds==='get')e.source.postMessage({ds:'got',v:localStorage.getItem(KEY)},e.origin);
+   else if(d.ds==='set'&&typeof d.v==='string'&&d.v.length<300000)localStorage.setItem(KEY,d.v);
+  }catch(x){try{e.source.postMessage({ds:'got',v:null,err:1},e.origin)}catch(y){}}
+ });
+ try{parent.postMessage({ds:'ready'},'*')}catch(x){}
+})();
+</script>
+</body></html>
